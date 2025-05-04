@@ -66,7 +66,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.markdown('<p class="main-header">Job Architect</p>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">Job Architect</h1>', unsafe_allow_html=True)
 st.markdown('<p class="sub-header">Create, manage, and export standardized job titles for your organization</p>', unsafe_allow_html=True)
 
 # Info box
