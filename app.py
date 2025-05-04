@@ -3,13 +3,12 @@ import pandas as pd
 
 # Set page configuration
 st.set_page_config(
-    page_title="Job Architect",
+    page_title="Job Title Generator",
     layout="wide"
 )
 
 # Add title and description
-st.title("Job Architect")
-
+st.title("Job Title Generator")
 st.markdown("Create and manage job titles by entering division, subdivision, and selecting a hierarchy level.")
 
 # Initialize session state to store our data
@@ -138,4 +137,4 @@ if not st.session_state.job_data.empty:
     if st.button("Clear All Data"):
         st.session_state.job_data = pd.DataFrame(columns=['Division', 'Subdivision', 'Job Title', 'Final Job Title'])
         st.success("All data cleared!")
-        st.experimental_rerun()
+        st.rerun()
